@@ -1,6 +1,6 @@
 #pragma strict
 
-private var resolution = 1024;
+private var resolution = 512;
 private var meshFilter : MeshFilter;
 private var sampleBuffer : float[];
 
