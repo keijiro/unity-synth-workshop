@@ -10,9 +10,18 @@ private var index = 0;
 private var tick = 0.0;
 private var interval = 0.0;
 
+function UpdateInterval() {
+	interval = AudioSettings.outputSampleRate / freq;
+	while (interval < resolution) interval *= 2;
+}
+
 function Awake() {
 	buffer = new float[resolution];
-	interval = AudioSettings.outputSampleRate / freq;
+	UpdateInterval();
+}
+
+function Update() {
+	UpdateInterval();
 }
 
 function OnAudioFilterRead(data : float[], channels : int) {

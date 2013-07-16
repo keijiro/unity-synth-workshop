@@ -54,6 +54,7 @@ function Start() {
 
 function Update() {
 	ProcessKeyboard();
+	FindObjectOfType(OscilloscopeInput).freq = freq / 4;
 }
 
 function OnAudioFilterRead(data : float[], channels : int) {
