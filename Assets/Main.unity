@@ -241,6 +241,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 239ed72046fbe4068836eee17e24b183, type: 3}
   m_Name: 
   freq: 440
+  semitone: 0
+  attack: .100000001
+  release: .5
+  volume: 0
+  keyDown: 0
 --- !u!82 &1833546846
 AudioSource:
   m_ObjectHideFlags: 0
@@ -310,6 +315,8 @@ GameObject:
   - 92: {fileID: 1989248115}
   - 124: {fileID: 1989248114}
   - 81: {fileID: 1989248113}
+  - 114: {fileID: 1989248120}
+  - 114: {fileID: 1989248119}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -390,3 +397,31 @@ MonoBehaviour:
   freq: 110
   resolution: 256
   buffer: []
+--- !u!114 &1989248119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1989248112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf31d1be7d5754ad792a3fe210e0fdf6, type: 3}
+  m_Name: 
+  decayTime: 4
+  wetMix: .25
+--- !u!114 &1989248120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1989248112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71bd2458928e74b809bb65aac0859d37, type: 3}
+  m_Name: 
+  delayMs: 20
+  frequencyHz: .100000001
+  depthMs: 30
+  amplifier: .666665971
+  feedback: .300000012
+  stereo: .5

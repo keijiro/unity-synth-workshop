@@ -12,7 +12,7 @@ var keyDown = false;
 private var tick = 0;
 
 function OnAudioFilterRead(data : float[], channels : int) {
-	freq = 440.0 * Mathf.Pow(2.0, semitone / 12.0);
+	freq = 440.0 * Mathf.Pow(2.0, (semitone + 3) / 12.0);
 
     for (var i = 0; i < data.Length; i += 2) {
     	if (keyDown) {
@@ -23,7 +23,7 @@ function OnAudioFilterRead(data : float[], channels : int) {
     
     	tick++;
     	var value = Mathf.Sin(freq * Mathf.PI * 2 * 12 * tick / 44100.0);
-    	value = Mathf.Sin(freq * Mathf.PI * 2 * tick / 44100.0 + 0.3 * value) * volume;
+    	value = Mathf.Sin(freq * Mathf.PI * 2 * tick / 44100.0 + 0.3 * value) * volume * 0.9;
         data[i  ] = value;
         data[i+1] = value;
     }
@@ -35,6 +35,7 @@ function Update() {
 	keyDown = false;
 	for (var i = 0; i < keys.Length; i++) {
 		if (Input.GetKey(keys[i])) {
+			if (semitone != i) volume = 0.0;
 			semitone = i;
 			keyDown = true;
 			break;
