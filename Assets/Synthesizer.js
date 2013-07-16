@@ -32,10 +32,10 @@ function TickSynth() {
 	// Sawtooth wave
 	// return (phase * 2 - 1) * envelope;
 
-	// Rectangle wave
+	// Square/Pulse wave
 	// return (phase < modulation ? -1 : 1) * envelope;
 	
-	// Triangular wave
+	// Triange wave
 	// return (phase < 0.25 ? phase * 4 : (phase < 0.75 ? 2.0 - phase * 4.0 : phase * 4 - 4)) * envelope;
 	
 	// 4-bit Sine wave
