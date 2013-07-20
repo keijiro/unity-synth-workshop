@@ -240,12 +240,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 239ed72046fbe4068836eee17e24b183, type: 3}
   m_Name: 
-  freq: 440
-  semitone: 0
-  modulation: .200000003
-  octave: 0
-  attack: .200000003
-  release: .5
 --- !u!82 &1833546846
 AudioSource:
   m_ObjectHideFlags: 0
@@ -403,7 +397,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1989248112}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4bacae3fcc044f7ca4b3df02e573669, type: 3}
   m_Name: 
@@ -417,7 +411,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1989248112}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d56f0acb0a63431a97b7d1d14fd90c2, type: 3}
   m_Name: 
