@@ -315,8 +315,8 @@ GameObject:
   - 92: {fileID: 1989248115}
   - 124: {fileID: 1989248114}
   - 81: {fileID: 1989248113}
-  - 114: {fileID: 1989248120}
   - 114: {fileID: 1989248119}
+  - 114: {fileID: 1989248120}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -403,25 +403,23 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1989248112}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf31d1be7d5754ad792a3fe210e0fdf6, type: 3}
+  m_Script: {fileID: 11500000, guid: c4bacae3fcc044f7ca4b3df02e573669, type: 3}
   m_Name: 
-  decayTime: 4
-  wetMix: .25
+  baseDelay: .100000001
+  depth: .200000003
+  frequency: .300000012
+  wetMix: .5
 --- !u!114 &1989248120
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1989248112}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71bd2458928e74b809bb65aac0859d37, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d56f0acb0a63431a97b7d1d14fd90c2, type: 3}
   m_Name: 
-  delayMs: 20
-  frequencyHz: .100000001
-  depthMs: 30
-  amplifier: .666665971
-  feedback: .300000012
-  stereo: .5
+  decayTime: 3.5
+  sendLevel: .600000024
